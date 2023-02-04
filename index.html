@@ -8,24 +8,33 @@
     <title>Cronometro</title>
 </head>
 <body>
-    <div class="reloj">
-        <div>
-            <span id="horas">00</span>
-            <span class="tiempo">Horas</span>
+    <div class="cronometro-container">
+        <div data-time class="reloj tiempo-container">
+            <div>
+                <span id="horas">00</span>
+                <span class="tiempo">Horas</span>
+            </div>
+            <div>
+                <span id="minutos">00</span>
+                <span class="tiempo">Minutos</span>
+            </div>
+            <div>
+                <span id="segundos">00</span>
+                <span class="tiempo">Segundos</span>
+            </div>
+            <div>
+                <span id="milisesegundos">00</span>
+                <span class="tiempo">Milissegundos</span>
+            </div>
         </div>
-        <div>
-            <span id="minutos">00</span>
-            <span class="tiempo">Minutos</span>
+        <div class="botons-container">
+            <button data-start="start">Inicializar</button>
+            <button data-pause="pause" disabled>Pausar</button>
+            <button data-stop="stop"disabled>Parar</button>
         </div>
-        <div>
-            <span id="segundos">00</span>
-            <span class="tiempo">Segundos</span>
-        </div>
-        <div>
-            <span id="milisesegundos">00</span>
-            <span class="tiempo">Milissegundos</span>
-        </div>
-
+       
+    </div>
+        <script src="script.js"></script>
     
 </body>
 </html>

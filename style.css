@@ -42,3 +42,33 @@ body{
 .reloj span.tiempo{
     font-size: 15px;
 }
+.botons-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 15px;
+}
+.botons-container > button{
+    font-size: 18px;
+    outline: none;
+    padding: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    border-color: transparent;
+    background: #021859;
+    color: #E1E6FA;
+    box-shadow: 5px 5px 15px rgba(0, 75, 119, 0.8);
+    transition: .5;
+}
+
+.botons-container > button:hover{
+    background: #025373;
+}
+.botons-container > button:disabled{
+    background: #02285990;
+    cursor: default;
+}
+.botons-container > button:disabled:hover{
+    background: #02285990;
+
+}
